@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Óvodára készülés otthon | Kindergarten Readiness at Home</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+:root {
+  --bg: #f7f5f2;
+  --fg: #1a1a1a;
+  --card: #ffffff;
+  --accent: #2c6e49;
+  --muted: #5a5a5a;
+  --border: #e0ddd8;
+}
+[data-theme="dark"] {
+  --bg: #121614;
+  --fg: #e8e6e3;
+  --card: #1c221e;
+  --accent: #6dbf8a;
+  --muted: #a8a6a3;
+  --border: #2e3530;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.65;
+  transition: background .2s, color .2s;
+}
+header {
+  position: sticky; top: 0; z-index: 10;
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  padding: .8rem 1.2rem;
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+}
+h1 { font-size: 1.35rem; margin: 0; font-weight: 650; }
+.controls { display: flex; gap: .5rem; }
+button {
+  background: var(--card); color: var(--fg); border: 1px solid var(--border);
+  border-radius: 8px; padding: .4rem .8rem; cursor: pointer; font-size: .9rem;
+}
+button:hover { border-color: var(--accent); }
+main { max-width: 820px; margin: 0 auto; padding: 1.5rem 1.2rem 4rem; }
+section { margin: 2.2rem 0; }
+h2 { font-size: 1.35rem; margin: 0 0 .6rem; color: var(--accent); }
+.key-points { list-style: none; padding: 0; margin: 0; }
+.key-points li {
+  background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+  padding: .9rem 1rem; margin: .6rem 0; position: relative; padding-left: 1.6rem;
+}
+.key-points li::before {
+  content: ""; position: absolute; left: .7rem; top: 1.15rem;
+  width: .45rem; height: .45rem; border-radius: 50%; background: var(--accent);
+}
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.1rem 1.2rem; margin: 1rem 0; }
+.sources { font-size: .85rem; color: var(--muted); margin-top: .6rem; }
+a { color: var(--accent); }
+footer { text-align: center; font-size: .85rem; color: var(--muted); padding: 2rem 1rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1><span class="lang-hu">Óvodára készülés otthon</span><span class="lang-en" style="display:none">Kindergarten Readiness at Home</span></h1>
+  <div class="controls">
+    <button id="themeBtn" aria-label="Toggle theme">🌙</button>
+    <button id="langBtn">EN</button>
+  </div>
+</header>
+<main>
+  <section>
+    <h2><span class="lang-hu">Fő pontok szülőknek</span><span class="lang-en" style="display:none">Key points for parents</span></h2>
+    <ul class="key-points">
+      <li><span class="lang-hu"><strong>Szobatisztaság:</strong> A legtöbb gyerek 2–4 éves kor között válik nappal szobatisztává. A készültségi jelek (száraz 2 óráig, jelzi az igényt, tud segíteni a vetkőzésben) fontosabbak, mint a pontos életkor. Az óvoda nem „teszi le” helyetted a pelenkát.</span><span class="lang-en" style="display:none"><strong>Toilet training:</strong> Most children achieve daytime control between ages 2–4. Readiness signs (dry for 2 hours, signals need, helps undress) matter more than exact age. Kindergarten does not “finish” potty training for you.</span></li>
+      <li><span class="lang-hu"><strong>Önálló elalvás és délutáni pihenés:</strong> A délutáni alvás támogatja a memória-konszolidációt óvodáskorban (PNAS, 2013 és meta-analízisek). Ha otthon nem gyakoroljátok az önálló ellazulást, az óvodai pihenő nehéz lesz.</span><span class="lang-en" style="display:none"><strong>Independent sleep and naps:</strong> Midday naps support memory consolidation in preschoolers (PNAS 2013 and meta-analyses). If you have not practiced independent wind-down at home, rest time at kindergarten will be hard.</span></li>
+      <li><span class="lang-hu"><strong>Határok és következetes szabályok:</strong> A meleg, de határokat adó (authoritative) nevelés adja a legjobb kimeneteleket. A mindent megengedő stílus magasabb kockázatot jelent a viselkedési problémákra és az önszabályozásra.</span><span class="lang-en" style="display:none"><strong>Boundaries and consistent rules:</strong> Warm-but-firm (authoritative) parenting produces the best outcomes. A fully permissive style raises risks for externalizing problems and weaker self-regulation.</span></li>
+      <li><span class="lang-hu"><strong>Önálló evés:</strong> 15–18 hónapos kortól sok gyerek már kanalaz; 2–3 éves korra a legtöbb önállóan eszik. Ha mindig te eteted, az óvodában ez problémát okoz.</span><span class="lang-en" style="display:none"><strong>Self-feeding:</strong> Many toddlers spoon-feed by 15–18 months; most are independent by 2–3 years. Constant adult feeding makes kindergarten meals harder.</span></li>
+      <li><span class="lang-hu"><strong>Játék és alapkészségek:</strong> Az építés, rajzolás, kirakó gyakorlása otthon építi a finommotorikát és a kitartást. Ezeket nem az óvoda „hozza meg” nulláról.</span><span class="lang-en" style="display:none"><strong>Play and basic skills:</strong> Building, drawing, and puzzles at home build fine motor skills and persistence. Kindergarten does not create these from scratch.</span></li>
+      <li><span class="lang-hu"><strong>Nyelvfejlődés:</strong> Az élő, gyermekhez szóló beszéd (ének, mese, oda-vissza beszélgetés) csecsemőkortól erősíti a nyelvi feldolgozást és a szókincset. A közösség nem pótolja az otthoni alapokat.</span><span class="lang-en" style="display:none"><strong>Language development:</strong> Live, child-directed speech (songs, stories, back-and-forth talk) from infancy strengthens processing and vocabulary. Group care does not replace the home foundation.</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="lang-hu">1. Szobatisztaság</span><span class="lang-en" style="display:none">1. Toilet training</span></h2>
+    <div class="card">
+      <p class="lang-hu">Az AAP és a Mayo Clinic szerint a legtöbb gyerek 18–30 hónapos kor között mutat készültségi jeleket, és a nappali kontroll 3–4 éves korra alakul ki. A készültség (szárazság, jelzés, utasítások követése) fontosabb, mint a naptár. A kényszerítés vagy a túl korai intenzív edzés nem gyorsítja fel a folyamatot.</p>
+      <p class="lang-en" style="display:none">AAP and Mayo Clinic guidance: most children show readiness between 18–30 months and achieve daytime control by 3–4 years. Readiness (dry periods, signaling, following directions) matters more than calendar age. Forcing or intensive training before ~27 months does not speed the process.</p>
+      <div class="sources">Sources: AAP / HealthyChildren.org; Mayo Clinic; AAFP review.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="lang-hu">2. Alvás és délutáni pihenés</span><span class="lang-en" style="display:none">2. Sleep and naps</span></h2>
+    <div class="card">
+      <p class="lang-hu">Kurdziel és munkatársai (PNAS, 2013) kimutatták, hogy az óvodáskorúak délutáni alvása javítja a térbeli memória-konszolidációt. Meta-analízisek megerősítik a napok szerepét a deklaratív memóriában. Ha a gyerek otthon nem szokott önállóan ellazulni vagy pihenni, az óvodai csendes idő frusztráló lesz mindenkinek.</p>
+      <p class="lang-en" style="display:none">Kurdziel et al. (PNAS 2013) showed that preschool naps improve spatial memory consolidation. Meta-analyses confirm benefits for declarative memory. If a child has never practiced independent wind-down or rest at home, quiet time at kindergarten becomes frustrating for everyone.</p>
+      <div class="sources">Sources: Kurdziel et al., PNAS 2013; systematic reviews on napping and memory in early childhood.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="lang-hu">3. Határok és nevelési stílus</span><span class="lang-en" style="display:none">3. Boundaries and parenting style</span></h2>
+    <div class="card">
+      <p class="lang-hu">A kutatások (Baumrind, Pinquart meta-analízisek, keresztkulturális vizsgálatok) következetesen azt mutatják, hogy a meleg + következetes határokat adó stílus (authoritative) adja a legjobb kimeneteleket a viselkedés, az önszabályozás és a későbbi alkalmazkodás terén. A permisszív (magas melegség, alacsony kontroll) stílus magasabb kockázatot jelent a külső viselkedési problémákra.</p>
+      <p class="lang-en" style="display:none">Research (Baumrind; Pinquart meta-analyses; cross-cultural studies) consistently finds that warm + firm-boundary (authoritative) parenting produces the best outcomes for behavior, self-regulation, and later adjustment. Permissive (high warmth, low control) styles raise risks for externalizing problems.</p>
+      <div class="sources">Sources: Baumrind; Pinquart meta-analyses; García et al. cross-national studies.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="lang-hu">4. Önálló evés</span><span class="lang-en" style="display:none">4. Self-feeding</span></h2>
+    <div class="card">
+      <p class="lang-hu">A fejlődési mérföldkövek szerint 12–15 hónapos kortól a gyerekek kezdik a kanalazást (sok kiömléssel), 15–18 hónapos korra sokan már önállóan esznek vastagabb ételeket, és 2–3 éves korra a legtöbb önálló. A gyakorlás (előre megtöltött kanál, majd önálló merítés) erősíti a finommotorikát. Ha a szülő mindig kanalaz, a gyerek nem gyakorolja a készséget.</p>
+      <p class="lang-en" style="display:none">Developmental milestones: spoon practice begins around 12–15 months (with spills), many toddlers feed themselves thicker foods by 15–18 months, and most are independent by 2–3 years. Practice (pre-loaded spoon, then self-scooping) builds fine motor skills. Constant adult feeding means the child does not practice the skill.</p>
+      <div class="sources">Sources: AAP-related developmental guidance; OT and pediatric feeding milestone summaries.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="lang-hu">5. Játék és alapkészségek</span><span class="lang-en" style="display:none">5. Play and foundational skills</span></h2>
+    <div class="card">
+      <p class="lang-hu">Az építés, rajzolás, kirakózás és a közös játék otthon fejleszti a finommotorikát, a kitartást és a problémamegoldást. Ezek a készségek nem „jönnek maguktól” az óvodában; az otthoni alapokra épülnek. A játékok rombolása és a „majd veszünk másikat” attitűd nem tanítja a gondoskodást.</p>
+      <p class="lang-en" style="display:none">Building, drawing, puzzles, and shared play at home develop fine motor skills, persistence, and problem-solving. These skills do not appear spontaneously at kindergarten; they build on home foundations. Breaking toys with the attitude “we’ll just buy another” does not teach care.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="lang-hu">6. Nyelvfejlődés</span><span class="lang-en" style="display:none">6. Language development</span></h2>
+    <div class="card">
+      <p class="lang-hu">Patricia Kuhl és mások munkái, valamint a LENA-alapú vizsgálatok azt mutatják, hogy a gyermekhez szóló élő beszéd (parentese, oda-vissza interakció, ének, mese) erősíti a nyelvi feldolgozást és a későbbi szókincset. A csak hallott felnőttbeszéd vagy a képernyő kevésbé hatékony. A beszédfejlődés otthon kezdődik.</p>
+      <p class="lang-en" style="display:none">Work by Patricia Kuhl and others, plus LENA-based studies, shows that live child-directed speech (parentese, back-and-forth interaction, songs, stories) strengthens language processing and later vocabulary. Overheard adult speech or screens are less effective. Language development starts at home.</p>
+      <div class="sources">Sources: Kuhl et al.; LENA / conversational-turn studies; Scientific American review.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="lang-hu">Gyakorlati tanácsok</span><span class="lang-en" style="display:none">Practical tips</span></h2>
+    <div class="card">
+      <ul>
+        <li class="lang-hu">Figyeld a készültségi jeleket a szobatisztaságnál, és légy türelmes; a legtöbb gyerek 3–4 éves korra nappal kész.</li>
+        <li class="lang-en" style="display:none">Watch for readiness signs for toilet training and be patient; most children are daytime-ready by 3–4 years.</li>
+        <li class="lang-hu">Gyakoroljátok az önálló ellazulást (mesés lefekvés, rövid pihenő) még óvoda előtt.</li>
+        <li class="lang-en" style="display:none">Practice independent wind-down (storytime, short rest) before kindergarten.</li>
+        <li class="lang-hu">Állíts fel egyszerű, következetes szabályokat, és magyarázd el őket.</li>
+        <li class="lang-en" style="display:none">Set simple, consistent rules and explain them.</li>
+        <li class="lang-hu">Hagyd, hogy a gyerek gyakorolja a kanalazást, még ha koszos is.</li>
+        <li class="lang-en" style="display:none">Let the child practice spoon-feeding, even if it is messy.</li>
+        <li class="lang-hu">Beszélj, énekelj, olvass a gyereknek minden nap.</li>
+        <li class="lang-en" style="display:none">Talk, sing, and read to the child every day.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+<footer>
+  <span class="lang-hu">Információs oldal, nem orvosi vagy nevelési tanács. Források a szövegben.</span>
+  <span class="lang-en" style="display:none">Informational page, not medical or parenting advice. Sources cited in text.</span>
+</footer>
+<script>
+const themeBtn = document.getElementById('themeBtn');
+const langBtn = document.getElementById('langBtn');
+const html = document.documentElement;
+function setTheme(t) {
+  html.setAttribute('data-theme', t);
+  themeBtn.textContent = t === 'dark' ? '☀️' : '🌙';
+  localStorage.setItem('theme', t);
+}
+function setLang(l) {
+  document.querySelectorAll('.lang-hu').forEach(el => el.style.display = l === 'hu' ? '' : 'none');
+  document.querySelectorAll('.lang-en').forEach(el => el.style.display = l === 'en' ? '' : 'none');
+  langBtn.textContent = l === 'hu' ? 'EN' : 'HU';
+  html.lang = l;
+  localStorage.setItem('lang', l);
+}
+themeBtn.onclick = () => setTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+langBtn.onclick = () => setLang(html.lang === 'hu' ? 'en' : 'hu');
+// default theme
+const savedTheme = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+setTheme(savedTheme);
+// default lang by IP (simple geo) or saved
+(async () => {
+  const saved = localStorage.getItem('lang');
+  if (saved) { setLang(saved); return; }
+  try {
+    const r = await fetch('https://ipapi.co/json/');
+    const d = await r.json();
+    setLang(d.country_code === 'HU' ? 'hu' : 'en');
+  } catch { setLang('hu'); }
+})();
+</script>
+</body>
+</html>
